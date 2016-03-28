@@ -1,17 +1,20 @@
 LighthouseForum::Application.routes.draw do
 
-  get 'posts', to: 'posts#index'
+  resources :posts
 
-  get 'posts/new', to: 'posts#new'
+##################
+  # get 'posts', to: 'posts#index'
 
-  get 'posts/:id/edit', to: 'posts#edit'
+  # get 'posts/new', to: 'posts#new'
 
-  get 'posts/:id', to: 'posts#show', as: 'post'
+  # get 'posts/:id/edit', to: 'posts#edit'
 
-  patch 'posts/:id', to: 'posts#update'
+  # get 'posts/:id', to: 'posts#show', as: 'post'
 
-  post 'posts', to: 'posts#create'
+  # patch 'posts/:id', to: 'posts#update'
 
+  # post 'posts', to: 'posts#create'
+#################
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
