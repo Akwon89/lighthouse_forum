@@ -1,3 +1,4 @@
+<%= link_to "back to this post", post_path(@post) %>
 <h2>Edit this post</h2>
 <%= form_for @post do |f| %>
   <div>
@@ -16,3 +17,4 @@
     <%= f.submit "Save" %>
   </div>
 <% end %>
+
